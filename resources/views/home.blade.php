@@ -18,10 +18,8 @@
                     <div class="body">
                         <p>{{ $page->body }}</p>
                     </div>
-                </li>z
+                </li>
             @endforeach
         </ul>
     </div>
 @endsection
-
-
