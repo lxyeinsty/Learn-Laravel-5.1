@@ -75,7 +75,7 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.page.edit')->withPage(Page::find(1));
+        return view('admin.page.edit')->withPage(Page::find($id));
     }
 
     /**
@@ -92,7 +92,7 @@ class PageController extends Controller
             'body' => 'required'
         ]);
 
-        $page = Page::find(1);
+        $page = Page::find($id);
         $page->title = Input::get('title');
         $page->body = Input::get('body');
         $page->user_id = 1;

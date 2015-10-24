@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Comment;
+use Input,Redirect;
 
 class CommentController extends Controller
 {

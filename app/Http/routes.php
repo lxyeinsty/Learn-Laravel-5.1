@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
 
 Route::get('page/{id}', 'PagesController@show');
 Route::post('comment/store', 'CommentController@store');
@@ -30,8 +30,8 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', 'AdminHomeController@index');
     Route::resource('pages', 'PageController');
-    Route::resource('comments', 'CommentController');
-});
+    Route::resource('comments', 'CommentController');});
+
 
 
 

@@ -14,7 +14,7 @@
                         <a href="{{ URL('page/' . $page->id) }}">
                             <h4>{{ $page->title }}</h4>
                         </a>
-                    </div>xq
+                    </div>
                     <div class="body">
                         <p>{{ $page->body }}</p>
                     </div>
